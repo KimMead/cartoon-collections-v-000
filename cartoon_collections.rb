@@ -3,9 +3,10 @@ def roll_call_dwarves(array)
   index = 0
   while index < array.length
     array.each_with_index do |name, index|
-    dwarf_list << puts "#{index + 1} #{name}"
+    dwarf_list << "#{index + 1} #{name}"
   end
-end 
+  dwarf_list
+end
 end
 
 def summon_captain_planet# code an argument here
