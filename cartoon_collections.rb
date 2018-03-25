@@ -1,14 +1,8 @@
 def roll_call_dwarves(array)
-  if block_given?
-  i = 0
   dwarf_list = []
-  while i < array.length
-    dwarf_list << yield(array[i])
-    i += 1
-  end
+  array.each_with_index { |name, index| 
+  dwarf_list << "#{name} #{index + 1}" }
   dwarf_list
-  else
-  end 
 end
 
 def summon_captain_planet# code an argument here
