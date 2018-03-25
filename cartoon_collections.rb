@@ -1,7 +1,8 @@
 def roll_call_dwarves(array)
   dwarf_list = []
   index = 0
-  array.each_with_index do |name, index|
+  while index < array.length
+    array.each_with_index do |name, index|
     dwarf_list << puts "#{index + 1} #{name}"
   end
 end
