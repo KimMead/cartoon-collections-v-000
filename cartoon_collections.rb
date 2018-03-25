@@ -4,8 +4,9 @@ def roll_call_dwarves(array)
 end
 
 def summon_captain_planet(array)
+  planeteer_calls = []
   array.collect do |calls|
-    puts "#{calls.upcase}"
+    planeteer_calls << "#{calls}!"
   end
 end
 
